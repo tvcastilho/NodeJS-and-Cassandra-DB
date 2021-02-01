@@ -2,7 +2,7 @@ var assert = require('assert');
 //”cassandra-driver” is in the node_modules folder. Redirect if necessary.
 var cassandra = require('cassandra-driver'); 
 //Replace Username and Password with your cluster settings
-var authProvider = new cassandra.auth.PlainTextAuthProvider('Username', 'Password');
+var authProvider = new cassandra.auth.PlainTextAuthProvider('cassandra', 'cassandra');
 //Replace PublicIP with the IP addresses of your clusters
 var contactPoints = ['localhost'];
 var client = new cassandra.Client({contactPoints: contactPoints, authProvider: authProvider, localDataCenter:'datacenter1', keyspace:'grocery'});
