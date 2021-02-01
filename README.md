@@ -1,13 +1,5 @@
 # Simple Exercise accessing Cassandra DB from NodeJS
 
-## References
-
-* Docker Image: [Link](https://hub.docker.com/_/cassandra/);
-
-* Sample NodeJS: [Link](https://www.instaclustr.com/support/documentation/cassandra/using-cassandra/connect-to-cassandra-with-node-js/)
-
-### OBS:
-
 Cassandra default docker image doesn't come with Authentication enabled. To setup authentication refer to [link](https://hopding.com/cassandra-authentication-in-docker-container);
 
 Dockerfile for enabling authentication provided
@@ -37,3 +29,9 @@ INSERT INTO grocery.fruit_stock (item_id, name, price_p_item) VALUES ('b1','bana
 INSERT INTO grocery.fruit_stock (item_id, name, price_p_item) VALUES ('c3','oranges',0.35);
 INSERT INTO grocery.fruit_stock (item_id, name, price_p_item) VALUES ('d4','pineapples',2.5);
 ```
+
+## References
+
+* Docker Image: [Link](https://hub.docker.com/_/cassandra/);
+
+* Sample NodeJS: [Link](https://www.instaclustr.com/support/documentation/cassandra/using-cassandra/connect-to-cassandra-with-node-js/)
